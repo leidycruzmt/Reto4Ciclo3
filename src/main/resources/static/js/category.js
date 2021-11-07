@@ -1,4 +1,4 @@
-var urlBaseCategory = "http://158.101.115.38:8080/api/Category";
+var urlBaseCategory = "http://129.158.45.180:8080/api/Category";
 $(document).ready(getCategory);
 
 function getCategory() {
@@ -6,7 +6,7 @@ function getCategory() {
     hideForm();
     $.ajax({
         dataType: 'json',
-        url: "http://158.101.115.38:8080/api/Category/all",
+        url: "http://129.158.45.180:8080/api/Category/all",
         type: "GET",
         success: function (response) {
             console.log(response)
@@ -36,7 +36,7 @@ var getQuadbikes = function () {
     $('#quadbike').empty().append('<option>Select a Quadbike</option>');
     $.ajax({
         dataType: 'json',
-        url: "http://158.101.115.38:8080/api/Quadbike/all",
+        url: "http://129.158.45.180:8080/api/Quadbike/all",
         type: "GET",
         success: function (response) {
             var misItems = response;
@@ -96,7 +96,7 @@ function postCategory() {
             contentType: "application/json; charset=utf-8",
             dataType: 'JSON',
             data: JSON.stringify(category),
-            url: "http://158.101.115.38:8080/api/Category/save",
+            url: "http://129.158.45.180:8080/api/Category/save",
             statusCode: {
                 201: function (response) {
                     success: {

@@ -1,6 +1,6 @@
-var urlBaseMessage = "http://158.101.115.38:8080/api/Message";
-var urlBaseClient = "http://158.101.115.38:8080/api/Client";
-var urlBaseQuadbike = "http://158.101.115.38:8080/api/Quadbike";
+var urlBaseMessage = "http://129.158.45.180:8080/api/Message";
+var urlBaseClient = "http://129.158.45.180:8080/api/Client";
+var urlBaseQuadbike = "http://129.158.45.180:8080/api/Quadbike";
 
 $(document).ready(getMessage);
 function getMessage() {
